@@ -10,7 +10,9 @@ const Header = () => {
         setMenuAtivo(!menuAtivo);
     };
 
-    function changeScrollHeight() {
+    var prevScrollPos = window.scrollY;
+
+    function changeHeader() {
 
         if(window.innerWidth > 1000){
             if(document.body.scrollTop > 120 || document.documentElement.scrollTop > 120){
@@ -21,9 +23,32 @@ const Header = () => {
 
             }    
         }
+        else {
+            var currentScrollPos = window.scrollY;
+
+            if(document.documentElement.scrollTop > 460){
+                if(prevScrollPos > currentScrollPos) {
+                    document.querySelector("header").style.top = "0";
+                }
+                else {
+                    document.querySelector("header").style.top = "-80px"
+                }
+            prevScrollPos = currentScrollPos;
+            }
+        }
     }
 
-    window.onscroll = function() {changeScrollHeight()};
+    function addShadowHeader() {
+        if(document.documentElement.scrollTop > 460)
+            document.querySelector("header").style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.1)"
+        else 
+            document.querySelector("header").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)"
+    }
+
+    window.onscroll = function() {
+        changeHeader()
+        addShadowHeader()
+    };
 
     return (
 

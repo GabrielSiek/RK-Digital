@@ -2,10 +2,10 @@
   display: flex;
   position: fixed;
   width: 100%;
-  top: 0;
   justify-content: center;
   background-color: #EDEDED;
   z-index: 1000;
+  transition: top 0.5s ease, box-shadow 0.7s ease;
 }
 
 .container-header {
@@ -13,12 +13,13 @@
   justify-content: space-between;
   position: relative;
   align-items: center;
-  width: 972px;
+  width: 90%;
   transition: all 0.5s ease;
+  margin: 16px 0;
 }
 
 .logo-header {
-  height: 48px;
+  height: 32px;
 }
 
 .hamburger {
@@ -43,7 +44,7 @@
 
 .nav-list {
   position: fixed;
-  top: 95px;
+  top: 64px;
   z-index: 1000;
   list-style: none;
   right: -1000px;
@@ -90,8 +91,12 @@
 }
 
 @media (min-width: 1000px) {
+  .logo-header {
+    height: 48px;
+  }
   .container-header {
     margin: 32px;
+    width: 972px;
   }
   .hamburger {
     display: none;
