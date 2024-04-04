@@ -1,0 +1,98 @@
+.item-resultado {
+  display: flex;
+  padding: 0 32px;
+}
+
+.item-inverso {
+  flex-direction: row-reverse;
+}
+
+.secao-1-resultados {
+  color: #EDEDED;
+}
+
+.titulo-resultados {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.texto-resultados {
+  font-weight: 300;
+}
+
+.card-resultados {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .item-resultado {
+    width: 584px;
+    justify-content: space-between;
+  }
+  .card-resultados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #145197;
+    height: 220px;
+    width: 180px;
+    border-radius: 20px;
+  }
+  .titulo-resultados {
+    font-size: 1.5rem;
+    margin-top: 0;
+    width: 20ch;
+  }
+  .texto-resultados {
+    width: 35ch;
+  }
+  .img-resultados {
+    width: 190px;
+    margin-left: -60px;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
+  }
+  .img-inverso {
+    margin-left: 0;
+    margin-right: -60px;
+    filter: drop-shadow(-10px -10px 5px rgba(0, 0, 0, 0.3));
+  }
+  .texto-resultados {
+    width: 31ch;
+  }
+}
+@media (min-width: 1000px) {
+  .item-resultado {
+    width: 908px;
+  }
+  .titulo-resultados {
+    font-size: 2.5rem;
+  }
+  .texto-resultados {
+    font-size: 1.3rem;
+  }
+  .card-resultados {
+    width: 270px;
+    height: 350px;
+    border-radius: 40px;
+  }
+  .img-resultados {
+    width: 300px;
+    margin-left: -80px;
+  }
+  .img-inverso {
+    margin-left: 0;
+    margin-right: -100px;
+  }
+}
+@media (min-width: 1440px) {
+  .item-resultado {
+    width: 1024px;
+  }
+  .card-resultados {
+    width: 300px;
+    height: 380px;
+  }
+  .img-resultados {
+    width: 350px;
+  }
+}/*# sourceMappingURL=TextoResultados.css.map */

@@ -1,0 +1,44 @@
+.botao {
+  width: 320px;
+  height: 45px;
+  border-radius: 60px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primario {
+  background-color: #145197;
+  color: #EDEDED;
+}
+.primario:hover {
+  background-color: #124a89;
+  transform: translateY(-5px);
+}
+
+.secundario {
+  background-color: #EDEDED;
+  color: #145197;
+  border: solid 1px;
+}
+.secundario:hover {
+  background-color: #D9D9D9;
+  transform: translateY(-5px);
+}
+
+.azul-escuro {
+  background-color: #EDEDED;
+  color: #041E3B;
+}
+.azul-escuro:hover {
+  background-color: #D9D9D9;
+  transform: translateY(-5px);
+}
+
+.menor {
+  width: 200px;
+  height: 40px;
+}/*# sourceMappingURL=Botao.css.map */

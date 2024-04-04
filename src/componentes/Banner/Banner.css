@@ -1,0 +1,78 @@
+.banner {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.secao-1-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.span-banner {
+  color: #145197;
+  font-weight: 900;
+}
+
+.titulo-banner {
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 18ch;
+  color: #041E3B;
+}
+
+.foguete-banner {
+  width: 290px;
+  margin-top: 64px;
+  margin-bottom: -90px;
+}
+
+@media (min-width: 410px) {
+  .titulo-banner {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 760px) {
+  .banner {
+    margin-top: 40px;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .titulo-banner {
+    text-align: left;
+  }
+  .secao-1-banner {
+    align-items: start;
+  }
+  .foguete-banner {
+    width: 290px;
+    margin-bottom: -40px;
+  }
+}
+@media (min-width: 1000px) {
+  .titulo-banner {
+    font-size: 2.5rem;
+  }
+  .foguete-banner {
+    width: 480px;
+    margin-bottom: -120px;
+  }
+}
+@media (min-width: 1440px) {
+  .banner {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .titulo-banner {
+    font-size: 3rem;
+  }
+  .foguete-banner {
+    width: 550px;
+    margin-bottom: -110px;
+  }
+}/*# sourceMappingURL=Banner.css.map */

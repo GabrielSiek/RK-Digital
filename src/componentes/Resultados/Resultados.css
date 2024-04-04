@@ -1,0 +1,55 @@
+.resultados {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-texto-resultados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #053061, #031D3A);
+  width: 324px;
+  border-radius: 40px;
+  margin-top: 23px;
+  margin-bottom: 64px;
+  padding: 32px 0;
+  gap: 32px;
+}
+
+.bt-resultados-dentro {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .resultados {
+    margin-top: 250px;
+  }
+  .bg-texto-resultados {
+    width: 648px;
+    gap: 64px;
+  }
+  .bt-resultados-dentro {
+    display: block;
+  }
+  .bt-resultados-fora {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .bg-texto-resultados {
+    width: 972px;
+  }
+}
+@media (min-width: 1440px) {
+  .resultados {
+    margin-top: 240px;
+  }
+  .bg-texto-resultados {
+    width: 1152px;
+    padding: 64px 0;
+    gap: 80px;
+  }
+}/*# sourceMappingURL=Resultados.css.map */

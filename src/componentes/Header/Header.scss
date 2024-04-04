@@ -1,0 +1,170 @@
+@import '../Variaveis/Variaveis.scss';
+
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: center;
+    background-color: $cor-secundaria;
+    z-index: 1000;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    width: 972px;
+
+    transition: all 0.5s ease;
+}
+
+
+.logo-header {
+    height: 48px;
+}
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    border: none;
+    background-color: transparent;
+
+    .linhas {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .linha-1, .linha-2, .linha-3 {
+        background-color: $cor-primaria;
+        width: 30px;
+        height: 3px;
+        border-radius: 60px;
+        transition: 0.3s ease-out;
+    }
+}
+
+
+.nav-list {
+
+    position: fixed;    
+    top: 95px;
+    z-index: 1000;
+    list-style: none;
+
+
+    right: -1000px;
+    width: 100%;
+    height: 100%;
+    padding-right: 32px;
+
+    background: $cor-secundaria;
+    color: $cor-primaria;
+
+    display: flex;
+    flex-direction: column;
+    
+    text-align: end;
+    font-weight: 600;
+    font-size: 1.1rem;
+    gap: 32px;
+
+    transition: 0.7s ease;
+
+    a { 
+        cursor: pointer;
+    }
+
+}
+
+.bt-contato-header {
+    display: none;
+}
+
+/* Estilos ativos */
+
+.nav.active .nav-list {
+    right: 0;
+}
+
+.nav.active .nav-list a {
+    opacity: 1;
+}
+
+.hamburger.active {
+    .linha-1 {
+        background-color: transparent;
+    }
+
+    .linha-2 {
+        position: fixed;
+        transform: rotate(45deg);
+    }
+
+    .linha-3 {
+        position: fixed;
+        transform: rotate(-45deg);
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .container-header {
+        margin: 32px;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .bt-contato-header {
+        display: block;
+    }
+
+    .nav-list {
+        position: static;    
+        height: fit-content;
+        top: 0;
+        padding-bottom: 0;    
+        background: none;
+        color: $cor-primaria;
+        gap: 32px;
+    
+        flex-direction: row;
+        
+        justify-content: space-between;
+    
+        a {
+            padding: 0;
+            font-weight: bold;
+
+            &::after {
+                transition: all 0.3s ease-in-out;
+                background-color: $cor-primaria;
+                content: "";
+                display: block;
+                height: 2px;
+                width: 0;
+            }
+            
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        .contato-navlist-header {
+            display: none;
+        }
+
+    }
+}
+
+@media (min-width:1440px) {
+
+    .container-header {
+        width: 1152px;
+    }
+}

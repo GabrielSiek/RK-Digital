@@ -1,0 +1,74 @@
+.card-servico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+  border-radius: 20px;
+  width: 290px;
+  height: 160px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+.card-servico:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card-servico:focus {
+  background-color: #145197;
+}
+.card-servico:focus .titulo-card-servico {
+  animation: anim-up 0.5s ease forwards;
+  color: #EDEDED;
+}
+.card-servico:focus .texto-card-servico {
+  animation: anim-up 0.6s ease forwards;
+  color: #EDEDED;
+}
+
+.icone-card-servico {
+  font-size: 50px;
+  color: #145197;
+}
+
+.titulo-card-servico {
+  font-size: 1.2rem;
+  width: 17ch;
+  font-weight: 800;
+}
+
+.texto-card-servico {
+  position: absolute;
+  font-weight: 400;
+  bottom: -60px;
+  width: calc(100% - 16px);
+  font-size: 0.9rem;
+  text-align: center;
+  color: transparent;
+}
+
+@keyframes anim-up {
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-75px);
+  }
+  100% {
+    transform: translateY(-70px);
+  }
+}
+@media (min-width: 1440px) {
+  .card-servico {
+    width: 320px;
+    height: 176px;
+  }
+  .icone-card-servico {
+    font-size: 55px;
+  }
+  .titulo-card-servico {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=CardServico.css.map */

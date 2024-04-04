@@ -1,0 +1,50 @@
+@import '../Variaveis/Variaveis.scss';
+
+.botao {
+    width: 320px;
+    height: 45px;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.primario {
+    background-color: $cor-primaria;
+    color: $cor-secundaria;
+
+    &:hover {
+        background-color: $hover-cor-primaria;
+        transform: translateY(-5px);
+    }
+}
+
+.secundario {
+    background-color: $cor-secundaria;
+    color: $cor-primaria;
+    border: solid 1px;
+
+    &:hover {
+        background-color: $hover-cor-secundaria;
+        transform: translateY(-5px);
+    }
+}
+
+.azul-escuro {
+    background-color: $cor-secundaria;
+    color: $cor-terciaria;
+
+    &:hover {
+        background-color: $hover-cor-secundaria;
+        transform: translateY(-5px);
+    }
+}
+
+.menor {
+    width: 200px;
+    height: 40px;
+}

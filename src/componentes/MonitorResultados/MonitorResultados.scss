@@ -1,0 +1,128 @@
+@import '../Variaveis/Variaveis.scss';
+
+.container-monitor-resultados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 64px;
+    color: $cor-primaria;
+}
+
+.container-titulo-monitor-resultados {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-top: 16px;
+}
+
+.container-milhao-resultados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    height: 135px;
+}
+
+.monitor-resultados {
+    position: absolute;
+    top: 0;
+    width: 324px;
+    z-index: -1;
+}
+
+.titulo-monitor-resultados {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.milhao-resultados {    
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.sub-milhao-resultados {
+    width: 25ch;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.bt-milhao-resultados {
+    display: none;
+}
+
+@media (min-width: 760px) {
+    
+    .container-titulo-monitor-resultados {
+        margin-top: 32px;
+        height: 52px;
+    }
+
+    .container-milhao-resultados {
+        margin-top: 10px;
+        height: 265;
+    }
+
+    .monitor-resultados {
+        width: 648px;
+    }
+
+    .titulo-monitor-resultados {
+        font-size: 20px;
+    }
+
+    .milhao-resultados {
+        font-size: 60px;
+    }
+
+    .sub-milhao-resultados {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .container-titulo-monitor-resultados {
+        height: 93px;
+        margin-top: 58px;
+    }
+    
+    .container-milhao-resultados {
+        position: relative;
+        margin-top: 18px;
+        height: 480px;
+    }
+
+    .monitor-resultados {
+        width: 1167px;
+    }
+
+    .titulo-monitor-resultados {
+        font-size: 32px;
+        margin-top: 30px;
+        
+    }
+
+    .sub-milhao-resultados {
+        font-size: 30px;
+        margin-bottom: 80px;
+    }
+
+    .milhao-resultados {
+        font-size: 120px;
+    }
+
+    .bt-milhao-resultados {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
