@@ -63,7 +63,7 @@
   }
   .container-milhao-resultados {
     margin-top: 10px;
-    height: 265;
+    height: 265px;
   }
   .monitor-resultados {
     width: 648px;
@@ -101,6 +101,7 @@
   }
   .milhao-resultados {
     font-size: 120px;
+    margin-top: 30px;
   }
   .bt-milhao-resultados {
     display: block;

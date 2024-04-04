@@ -1,5 +1,5 @@
 .resultados {
-  margin-top: 45px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,6 @@
   background-image: linear-gradient(to bottom, #053061, #031D3A);
   width: 324px;
   border-radius: 40px;
-  margin-top: 23px;
   margin-bottom: 64px;
   padding: 32px 0;
   gap: 32px;
@@ -25,7 +24,7 @@
 
 @media (min-width: 760px) {
   .resultados {
-    margin-top: 250px;
+    margin-top: 140px;
   }
   .bg-texto-resultados {
     width: 648px;
@@ -45,7 +44,7 @@
 }
 @media (min-width: 1440px) {
   .resultados {
-    margin-top: 240px;
+    margin-top: 255px;
   }
   .bg-texto-resultados {
     width: 1152px;

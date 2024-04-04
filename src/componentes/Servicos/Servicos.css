@@ -18,10 +18,22 @@
   gap: 32px;
 }
 
+.container-titulo-servicos {
+  text-align: center;
+}
+
 .titulo-servicos {
   color: #145197;
   font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.subtitulo-servicos {
+  color: #145197;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 0;
 }
 
 .cards-servicos {

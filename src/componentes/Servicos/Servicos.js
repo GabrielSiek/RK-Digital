@@ -7,8 +7,11 @@ const Servicos = () => {
     return (
         <section className='servicos'>
             <div className='bg-servicos'>
-                <h1 className='titulo-servicos'>Serviços da RK Digital</h1>
-                <div className='cards-servicos'>
+                <div className='container-titulo-servicos'>
+                    <h2 className='titulo-servicos'>Serviços da RK Digital</h2>
+                    <h3 className='subtitulo-servicos'>Clique nos cards para saber mais</h3>
+                </div>
+                 <div className='cards-servicos'>
                     <CardServico
                         icone='infoprodutos'
                         titulo='Lançamento de infoprodutos'
