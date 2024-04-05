@@ -1,8 +1,20 @@
 import './MonitorResultados.css'
 import Botao from '../Botao/Botao';
+import { useState } from 'react';
 
 
 const MonitorResultados = () => {
+
+    const [numMonitor, setNumMonitor] = useState(900000);
+
+    function increaseNumber(numMonitor) {
+        while(numMonitor <= 100000) {
+            setNumMonitor(numMonitor++);
+        }
+    }
+
+    function ativarAnim() {
+    }
 
     return (
         <section className='container-monitor-resultados'>
