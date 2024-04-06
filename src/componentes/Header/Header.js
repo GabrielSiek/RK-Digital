@@ -16,14 +16,16 @@ const Header = () => {
 
         if(window.innerWidth > 1000){
             if(document.body.scrollTop > 120 || document.documentElement.scrollTop > 120){
-                document.getElementById("container-header").style.margin = "4px 16px"
+                document.getElementById("container-header").style.padding = "0px 16px"
             }
             else{
-                document.getElementById("container-header").style.margin = "16px 16px"
+                document.getElementById("container-header").style.padding = "16px 16px"
 
             }    
         }
         else {
+
+        if(!menuAtivo){
             var currentScrollPos = window.scrollY;
 
             if(document.documentElement.scrollTop > 460){
@@ -35,6 +37,8 @@ const Header = () => {
                 }
             prevScrollPos = currentScrollPos;
             }
+        }
+            
         }
     }
 
