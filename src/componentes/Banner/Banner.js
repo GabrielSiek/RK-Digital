@@ -1,4 +1,4 @@
-import Botao from '../Botao/Botao';
+import {BotaoContato} from '../Botao/Botao';
 import './Banner.css'
 
 const Banner = () => {
@@ -7,9 +7,9 @@ const Banner = () => {
         <section className='banner'>
             <div className='secao-1-banner'>
                 <h1 className='titulo-banner'><span className='span-banner'>Transforme</span> as vendas do seu produto com a RK Digital</h1>
-                <Botao className='bt-banner' estilo='primario'>Converse com a gente!</Botao>
+                <BotaoContato className='bt-banner' estilo='primario'>Converse com a gente!</BotaoContato>
             </div>
-            <img className='foguete-banner'src='/imagens/foguete-banner.png' alt='foguete decolando'/>
+            <img className='foguete-banner'src='/imagens/foguete-banner.webp' alt='foguete decolando'/>
         </section>
     )
 }

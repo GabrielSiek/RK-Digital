@@ -1,9 +1,9 @@
 import './MonitorResultados.css'
-import Botao from '../Botao/Botao';
-import { useState } from 'react';
+import {BotaoContato} from '../Botao/Botao';
+import { useState, forwardRef } from 'react';
 
 
-const MonitorResultados = () => {
+const MonitorResultados = forwardRef((props, ref) => {
 
     const [numMonitor, setNumMonitor] = useState(900000);
 
@@ -17,8 +17,8 @@ const MonitorResultados = () => {
     }
 
     return (
-        <section className='container-monitor-resultados'>
-            <img src='/imagens/monitor-resultados.png' className='monitor-resultados'/>
+        <section  ref={ref}  id="monitor-resultados"  className='container-monitor-resultados'>
+            <img src='/imagens/monitor-resultados.webp' className='monitor-resultados'/>
             <div className='container-titulo-monitor-resultados'>
                 <h1 className='titulo-monitor-resultados'>Um pouco sobre a RK Digital</h1>
             </div>
@@ -28,13 +28,13 @@ const MonitorResultados = () => {
                 <h2 className='sub-milhao-resultados'>Faturados em 3 anos de atuação no mercado digital</h2>
 
                 <div className='bt-milhao-resultados'>
-                    <Botao estilo='primario'>Converse com a gente!</Botao>
+                    <BotaoContato estilo='primario'>Converse com a gente!</BotaoContato>
                 </div>
             </div>
             
         </section>
         
     )
-}
+})
 
 export default MonitorResultados;

@@ -30,10 +30,11 @@
 }
 
 .subtitulo-servicos {
-  color: #145197;
+  color: #041E3B;
+  max-width: 560px;
   font-weight: 500;
-  font-size: 0.8rem;
-  margin-top: 0;
+  font-size: 0.9rem;
+  margin: 8px 32px;
 }
 
 .cards-servicos {
@@ -56,6 +57,9 @@
   }
   .titulo-servicos {
     font-size: 1.6rem;
+  }
+  .subtitulo-servicos {
+    font-size: 1.2rem;
   }
   .bg-servicos {
     width: 648px;
