@@ -1,3 +1,1 @@
-ultima secao
-footer
-arrumar titulo monitor centralizado tablet
+primeiro projeto feito com scss
